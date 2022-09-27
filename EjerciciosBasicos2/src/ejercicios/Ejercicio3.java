@@ -19,7 +19,7 @@ public class Ejercicio3 {
 		if (num % 2 == 0) {
 			System.out.println("Es un número par");
 		} else {
-			System.out.println("Es un número impar");
+			System.out.println("Es# un número impar");
 		}
 		// cerramos el Scanner
 		sc.close();
