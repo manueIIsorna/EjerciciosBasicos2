@@ -16,11 +16,7 @@ public class Ejercicio3 {
 		System.out.print("Introduzca un numero entero: ");
 		num = sc.nextInt();
 		// Imprimimos el resultado
-		if (num % 2 == 0) {
-			System.out.println("Es un número par");
-		} else {
-			System.out.println("Es# un número impar");
-		}
+		System.out.println("El número sería par --> " +(num % 2 == 0) );
 		// cerramos el Scanner
 		sc.close();
 	}
