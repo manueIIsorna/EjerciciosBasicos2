@@ -30,10 +30,11 @@ public class Ejercicio5 {
 		// + notaTercerTrimestre) / 3;
 		// notaMediaExpedienteAcademico = (notaPrimerTrimestre + notaSegundoTrimestre +
 		// notaTercerTrimestre) / 3;
-		notaMedia = (notaPrimerTrimestre + notaSegundoTrimestre + notaTercerTrimestre) / 3;
+
+		notaMedia = (double) (notaPrimerTrimestre + notaSegundoTrimestre + notaTercerTrimestre) / 3;
 		// Imprimimos el resultado
 		System.out.println("La nota media según el Boletín de Calificaciones es de " + (int) notaMedia);
-		System.out.print("La nota media según el Expediente Académico es de " + notaMedia);
+		System.out.printf("La nota media según el Expediente Académico es de %.2f ", notaMedia);
 		// cerramos el Scanner
 		sc.close();
 	}

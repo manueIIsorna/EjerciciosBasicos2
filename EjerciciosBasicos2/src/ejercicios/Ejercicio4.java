@@ -20,7 +20,7 @@ public class Ejercicio4 {
 		boolean estaLloviendo;
 		boolean haFinalizadoTareas;
 		boolean irBiblioteca;
-		boolean salirCalle = false;
+		boolean salirCalle;
 
 		// bloque de instrucciones
 		System.out.println("Veamos si puedes o no salir a la calle.. [USA LAS PALABRAS \"true\" Y \"false\"");
@@ -30,7 +30,7 @@ public class Ejercicio4 {
 		haFinalizadoTareas = sc.nextBoolean();
 		System.out.println("¿Tienes que ir a la biblioteca?");
 		irBiblioteca = sc.nextBoolean();
-		salirCalle = estaLloviendo == false && haFinalizadoTareas == true || irBiblioteca == true;
+		salirCalle = !estaLloviendo && haFinalizadoTareas || irBiblioteca;
 		// Imprimimos el resultado
 		System.out.println("¿Puede o no puede salir? --> " + salirCalle);
 		// cerramos el Scanner
